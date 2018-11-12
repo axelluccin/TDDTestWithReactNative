@@ -1,0 +1,43 @@
+{
+  "name": "test-tdd-with-react-native",
+  "version": "0.1.0",
+  "description": "test d'une application react native avec tdd",
+  "author": {
+    "name": "Luccin Axel",
+    "email": "axel.luccin@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "lint": "eslint cypress/integration/integra/ src/ test/",
+    "unit": "jest test/",
+    "e2e": "cypress open"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "cypress": "^3.1.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "eslint": "^5.9.0",
+    "eslint-config-codingitwrong": "^0.1.4",
+    "eslint-plugin-cypress": "^2.1.2",
+    "eslint-plugin-jest": "^22.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "parcel-bundler": "^1.10.3"
+  },
+  "dependencies": {
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>test/setup.js"
+  }
+}
